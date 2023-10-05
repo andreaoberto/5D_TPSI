@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-sm-6 bg-warning">
+    <h3>Fase di betatesting</h3>
+    <h4>Numero di stress test eseguiti: {{numTests}}</h4>
+  </div>
+  <div class="col-sm-6 bg-light">
+    <h3>Confronto tra interpolazione di stringa e proprietà vincolante</h3>
+    <h4>Interpolazione di stringa: <span class="text-primary">{{car.model}}</span></h4>
+    <h4>Proprietà vincolante: <span class="text-danger" [textContent]="car.model"></span></h4>
+    <hr width="70%">
+    <div><img src="{{car.img}}" alt="img non trovata"></div>
+    <div><img [src]="car.img" alt="img non trovata"></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 bg-info bg-opacity-50 p-3">
+    <h3>Test evento click su un button</h3>
+    <button class="btn btn-primary">Test button</button>
+  </div>
+  <div class="col-sm-6">
+
+  </div>
+</div>
